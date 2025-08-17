@@ -22,7 +22,7 @@ export default function AboutPage() {
       <AboutHero />
       <OurStory />
       <WhyChooseUs />
-      <LocationContact />
+      {/* <LocationContact /> */}
 
       {/* Call to Action */}
       <section className="py-20 px-4 bg-gradient-to-r from-orange-500 to-orange-600">
