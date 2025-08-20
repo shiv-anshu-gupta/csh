@@ -65,7 +65,7 @@ export default function AboutHero() {
           <div className="relative">
             <div className="bg-gradient-to-br from-orange-400 to-orange-600 rounded-3xl p-8 transform rotate-3">
               <img
-                src="/placeholder.svg?height=400&width=500"
+                src="/codingClass.png?height=400&width=500"
                 alt="CodingSkillHub Classroom"
                 className="w-full h-80 object-cover rounded-2xl transform -rotate-3 shadow-2xl"
               />

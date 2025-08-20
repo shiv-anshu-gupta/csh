@@ -15,15 +15,18 @@ export default function Footer() {
   return (
     <footer className="bg-white text-gray-800">
       {/* Main Footer Content */}
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-                <CheckCircle className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-2xl font-bold text-gray-900">CSH</span>
+            <div className="flex items-center gap-2">
+              <Link href="/">
+                <img
+                  src="/Artboard 1CSH.png"
+                  alt="CSH Logo"
+                  className="h-28 w-28 object-contain"
+                />
+              </Link>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
               Expand your knowledge and open doors to exciting careers with our
@@ -31,34 +34,23 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="#"
+                href="https://www.facebook.com/people/Coding-Skill-Hub/61557037483827/?_rdr"
                 className="text-gray-600 hover:text-orange-500 transition-colors"
               >
                 <Facebook className="w-6 h-6" />
               </Link>
+
               <Link
-                href="#"
-                className="text-gray-600 hover:text-orange-500 transition-colors"
-              >
-                <Twitter className="w-6 h-6" />
-              </Link>
-              <Link
-                href="#"
+                href="https://www.instagram.com/codingskillhub/"
                 className="text-gray-600 hover:text-orange-500 transition-colors"
               >
                 <Instagram className="w-6 h-6" />
               </Link>
               <Link
-                href="#"
+                href="https://www.linkedin.com/company/codingskillhub/posts/?feedView=all"
                 className="text-gray-600 hover:text-orange-500 transition-colors"
               >
                 <Linkedin className="w-6 h-6" />
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-600 hover:text-orange-500 transition-colors"
-              >
-                <Youtube className="w-6 h-6" />
               </Link>
             </div>
           </div>
@@ -68,7 +60,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="/"
                   className="text-gray-700 hover:text-orange-500 transition-colors text-sm font-medium"
                 >
                   Home
@@ -76,31 +68,16 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/about"
                   className="text-gray-700 hover:text-orange-500 transition-colors text-sm font-medium"
                 >
                   About Us
                 </Link>
               </li>
+
               <li>
                 <Link
-                  href="#"
-                  className="text-gray-700 hover:text-orange-500 transition-colors text-sm font-medium"
-                >
-                  Solutions
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-gray-700 hover:text-orange-500 transition-colors text-sm font-medium"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
+                  href="/contact"
                   className="text-gray-700 hover:text-orange-500 transition-colors text-sm font-medium"
                 >
                   Contact
@@ -114,7 +91,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="/courses/2"
                   className="text-gray-700 hover:text-orange-500 transition-colors text-sm font-medium"
                 >
                   Web Development
@@ -122,7 +99,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/courses/4"
                   className="text-gray-700 hover:text-orange-500 transition-colors text-sm font-medium"
                 >
                   Data Science
@@ -130,7 +107,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/courses/6"
                   className="text-gray-700 hover:text-orange-500 transition-colors text-sm font-medium"
                 >
                   Cyber Security
@@ -138,7 +115,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/courses/12"
                   className="text-gray-700 hover:text-orange-500 transition-colors text-sm font-medium"
                 >
                   Digital Marketing
@@ -146,7 +123,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/courses/7"
                   className="text-gray-700 hover:text-orange-500 transition-colors text-sm font-medium"
                 >
                   UI/UX Design
@@ -173,7 +150,7 @@ export default function Footer() {
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-orange-500 flex-shrink-0" />
                 <p className="text-gray-700 text-sm">
-                  kuldeepkewat911@gmail.com
+                  codingskillhub@gmail.com
                 </p>
               </div>
             </div>

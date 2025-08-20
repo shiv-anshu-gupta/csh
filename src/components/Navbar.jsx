@@ -23,7 +23,6 @@ export default function Navbar() {
     { name: "Home", href: "/", hasDropdown: false, isActive: true },
     { name: "About", href: "/about", hasDropdown: false },
     { name: "Courses", href: "#", hasDropdown: true },
-    { name: "Blog", href: "/blog", hasDropdown: false },
     { name: "Contact", href: "/contact", hasDropdown: false },
   ];
 
@@ -39,30 +38,21 @@ export default function Navbar() {
         }`}
       >
         <div
-          className={`flex items-center justify-between px-6 py-3 shadow-lg transition-all duration-300 ${
+          className={`flex items-center justify-between px-6 py-1 shadow-lg transition-all duration-300 ${
             isScrolled
               ? "rounded-none bg-white/90 backdrop-blur-md border-b border-gray-200"
               : "rounded-full bg-white"
           }`}
         >
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500">
-              <svg
-                className="h-5 w-5 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </div>
-            <span className="text-xl font-bold text-gray-900">CSH</span>
+          <div className="flex items-center ">
+            <Link href="/">
+              <img
+                src="/Artboard 1CSH.png"
+                alt="CSH Logo"
+                className="h-14 w-20 object-contain"
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -96,15 +86,11 @@ export default function Navbar() {
             </button>
 
             <Link
-              href="/login"
-              className="hidden text-sm font-medium text-gray-700 hover:text-gray-900 lg:block"
+              href="/contact"
+              className="bg-orange-500 px-6 py-2 text-sm font-medium text-white hover:bg-orange-600"
             >
-              Log In
-            </Link>
-
-            <Button className="bg-orange-500 px-6 py-2 text-sm font-medium text-white hover:bg-orange-600">
               Get Started
-            </Button>
+            </Link>
 
             <button
               className="text-gray-600 hover:text-gray-900 lg:hidden"

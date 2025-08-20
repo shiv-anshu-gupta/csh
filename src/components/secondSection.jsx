@@ -1,5 +1,6 @@
 import { ArrowUpRight, Clock, BarChart3 } from "lucide-react";
 import { courseCategories } from "../lib/courses";
+import Link from "next/link"; // ✅ import Link
 
 export default function SecondSection() {
   return (
@@ -30,9 +31,12 @@ export default function SecondSection() {
             >
               {/* Action Button */}
               <div className="absolute top-6 right-6 z-10">
-                <button className="p-2 bg-white shadow-md rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300 group-hover:scale-110">
+                <Link
+                  href={`/courses/${category.id}`}
+                  className="p-2 bg-white shadow-md rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300 group-hover:scale-110 inline-flex"
+                >
                   <ArrowUpRight className="h-5 w-5" />
-                </button>
+                </Link>
               </div>
 
               {/* Image */}

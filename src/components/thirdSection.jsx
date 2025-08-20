@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function DiversitySection() {
   return (
@@ -60,10 +61,10 @@ export default function DiversitySection() {
               {/* Graduate Students Stat */}
               <div className="space-y-2">
                 <div className="text-4xl font-bold text-orange-500 sm:text-5xl">
-                  28K
+                  250+
                 </div>
                 <div className="text-lg font-semibold text-gray-900">
-                  Graduate Students
+                  Trained Students
                 </div>
               </div>
 
@@ -80,9 +81,12 @@ export default function DiversitySection() {
 
             {/* CTA Button */}
             <div className="pt-4">
-              <Button className="bg-orange-500 hover:bg-orange-500 text-white px-8 py-3 text-base font-semibold rounded-lg">
+              <Link
+                href="/contact"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-base font-semibold rounded-lg"
+              >
                 Get Started
-              </Button>
+              </Link>
             </div>
           </div>
         </div>
