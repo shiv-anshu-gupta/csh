@@ -39,7 +39,7 @@ export default function AboutHero() {
                 <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-2">
                   <Users className="w-8 h-8 text-orange-500" />
                 </div>
-                <div className="text-2xl font-bold text-gray-900">2000+</div>
+                <div className="text-2xl font-bold text-gray-900">250+</div>
                 <div className="text-sm text-gray-600">Students Trained</div>
               </div>
 
@@ -65,7 +65,7 @@ export default function AboutHero() {
           <div className="relative">
             <div className="bg-gradient-to-br from-orange-400 to-orange-600 rounded-3xl p-8 transform rotate-3">
               <img
-                src="/codingClass.png?height=400&width=500"
+                src="/codingClass.png"
                 alt="CodingSkillHub Classroom"
                 className="w-full h-80 object-cover rounded-2xl transform -rotate-3 shadow-2xl"
               />
