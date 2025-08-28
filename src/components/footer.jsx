@@ -166,7 +166,17 @@ export default function Footer() {
               <p>&copy; {new Date().getFullYear()} CSH. All rights reserved.</p>
             </div>
             <div className="flex items-center text-sm text-gray-600">
-              <p>Developed by Shivanshu Gupta</p>
+              <p>
+                Developed by{" "}
+                <a
+                  href="https://www.linkedin.com/in/shivanshu-gupta-6a0231211/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  Shivanshu Gupta
+                </a>
+              </p>
             </div>
           </div>
         </div>
