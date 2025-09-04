@@ -1,9 +1,7 @@
-"use client";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { useState } from "react";
-import ChatButton from "../components/ChatButton";
-import ChatPopup from "../components/ChatPopup"; // import your portal chat component
+import ChatProvider from "../components/ChatProvider";
+import InstallPWAButton from "../components/InstallPWAButton"; // new
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,9 +13,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export default function RootLayout({ children }) {
-  const [isOpen, setIsOpen] = useState(false);
+export const metadata = {
+  title: "codingskillhub",
+  description: "Next.js app with chat",
+  manifest: "/manifest.webmanifest",
+};
 
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
@@ -25,14 +27,11 @@ export default function RootLayout({ children }) {
       >
         {children}
 
-        {/* Chat Button */}
-        <ChatButton
-          isOpen={isOpen}
-          onClick={() => setIsOpen((prev) => !prev)}
-        />
+        {/* Chat features handled in client provider */}
+        <ChatProvider />
 
-        {/* Chat Popup Portal */}
-        {isOpen && <ChatPopup onClose={() => setIsOpen(false)} />}
+        {/* Install PWA Button */}
+        <InstallPWAButton />
 
         {/* Portal div for ChatPopup */}
         <div id="chat-portal" />
